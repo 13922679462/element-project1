@@ -58,7 +58,7 @@ export default {
         console.log(value)
         if(!value) return
         this.$axios.get("./static/data.json",this.loginForm).then((data)=>{
-          console.log(data)
+          // console.log(data)
           if(data.status !==200) return this.$message.error('登录失败')
           this.$message.success('登录成功')
           let token="abcdjp23n44pnvpd44dvg"

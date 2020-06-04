@@ -1,0 +1,95 @@
+{
+    "list":[{
+        "data":{
+            "id" :101,
+            "authName":"用户管理",
+            "path":null,
+            "children":[
+                {
+                    "id" :201,
+                    "authName":"用户列表",
+                    "path":null
+                   
+                }
+            ]
+    
+        }
+    },
+    {
+        "data":{
+            "id" :102,
+            "authName":"权限管理",
+            "path":null,
+            "children":[
+                {
+                    "id" :202,
+                    "authName":"角色列表",
+                    "path":null
+                    
+                },
+                {
+                    "id" :203,
+                    "authName":"权限列表",
+                    "path":null
+                    
+                }
+            ]
+    
+        }
+    },
+    {
+        "data":{
+            "id" :103,
+            "authName":"商品管理",
+            "path":null,
+            "children":[
+                {
+                    "id" :204,
+                    "authName":"商品管理",
+                    "path":null
+                
+                }
+            ]
+    
+        }
+    },
+    {
+        "data":{
+            "id" :104,
+            "authName":"订单管理",
+            "path":null,
+            "children":[
+                {
+                    "id" :205,
+                    "authName":"商品管理",
+                    "path":null
+                   
+                }
+            ]
+    
+        }
+    },{
+        "data":{
+            "id" :105,
+            "authName":"数据统计",
+            "path":null,
+            "children":[
+                {
+                    "id" :206,
+                    "authName":"商品管理",
+                    "path":null
+                  
+                }
+            ]
+    
+        }
+    }
+       
+    ],
+   
+    
+    "meta":{
+        "msg":"获取菜单列表成功",
+        "status":200
+    }
+}
