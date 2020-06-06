@@ -49,7 +49,7 @@ export default {
   methods:{
     //点击重置按钮
     resetLoginForm(){
-      console.log(this)
+      // console.log(this)
       this.$refs.loginFormRef.resetFields()
     },
     // 登录

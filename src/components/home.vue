@@ -18,7 +18,7 @@
         <!-- 侧边菜单区域 -->
          <!-- 折叠 -->
          <div class="toggle-button" @click="toggleButton">|||</div>
-        <el-menu router unique-opened background-color="#333744" text-color="#fff" active-text-color="#ffd04b" :collapse="isCollapse">
+        <el-menu :default-active="$route.path" router unique-opened background-color="#333744" text-color="#fff" active-text-color="#ffd04b" :collapse="isCollapse">
             
            <el-submenu :index="item.data.id+''" v-for="item in menuList" :key="item.id">
            <!-- 一级菜单模板区域 -->
@@ -26,7 +26,7 @@
                <i class="el-icon-location"></i>
                <span>{{item.data.authName}}</span>
            </template> 
-           <el-menu-item :index='subitem.id+""' v-for="subitem in item.data.children" :key="subitem.id">
+           <el-menu-item :index='"/"+subitem.path' v-for="subitem in item.data.children" :key="subitem.id">
                <template slot="title">
                <i class="el-icon-location"></i>
                <span>{{subitem.authName}}</span>
@@ -39,19 +39,21 @@
     <!-- 主体部分s -->
     <el-main>
         <router-view></router-view>
-        Main
+        <div id="dv1">111</div>
+        <!-- Main
         <p v-for="item in menuList" :key="item.id">{{item.data.authName}}
          {{item.data.id}}
           <span v-for="subitem in item.data.children" :key="subitem.id">{{subitem.authName}}</span>
-        </p>
+        </p> -->
     </el-main>
   </el-container>
 </el-container>
 
-  </div>
+  </div> 
 </template>
 
 <script>
+// import "./home.less"
 export default {
     created(){
         this.getMenuList()
@@ -91,7 +93,7 @@ export default {
 }
 </script>
 
-<style>
+<style  scoped>
 #home{height:100%}
 .el-container{
     height: 100%;

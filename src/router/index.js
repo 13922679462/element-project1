@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 import login from '@/components/login'
 import home from '@/components/home'
 import welcome from '@/components/welcome'
+import users from '@/components/user/users'
 let router= new VueRouter({
     routes:[{
         path:"/login",
@@ -17,8 +18,14 @@ let router= new VueRouter({
         children:[
             {
                 path:'/welcome',
-                component:welcome
+                component:welcome,
+              
             },
+            {
+                path:'/users',
+                component:users
+
+            }
            
         ]
 

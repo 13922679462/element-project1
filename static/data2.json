@@ -8,7 +8,7 @@
                 {
                     "id" :201,
                     "authName":"用户列表",
-                    "path":null
+                    "path":"users"
                    
                 }
             ]
