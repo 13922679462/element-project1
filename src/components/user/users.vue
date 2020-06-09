@@ -20,6 +20,9 @@
     </el-col>
 </el-row>
 <el-table :data="userList" stripe >
+  <el-table-column type="index" label="#">
+
+  </el-table-column>
   <el-table-column
       prop="name"
       label="姓名"
