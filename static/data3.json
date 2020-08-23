@@ -1,22 +1,32 @@
 {
    "list": [
     {
+        "id":0,
         "name":"张华",
          "age" :18,
          "phone":13060593212,
-         "job":"web前端开发工程师"
+         "job":"web前端开发工程师",
+          "state":true,
+          "email":"123@163.com"
     },
     {
+        "id":1,
         "name":"赵越",
          "age" :19,
          "phone":13060593212,
-         "job":"web前端开发工程师"
+         "job":"web前端开发工程师",
+         "state":false,
+         "email":"12345@163.com"
     },
     {
+        "id":2,
         "name":"小军",
          "age" :18,
          "phone":13060593212,
-         "job":"web前端开发工程师"
+         "job":"web前端开发工程师",
+         "state":true,
+         "email":"1d2s3@163.com"
+
     }
    ]
 }

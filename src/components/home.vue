@@ -39,6 +39,7 @@
     <!-- 主体部分s -->
     <el-main>
         <router-view></router-view>
+
         <div id="dv1">111</div>
         <!-- Main
         <p v-for="item in menuList" :key="item.id">{{item.data.authName}}
@@ -48,12 +49,12 @@
     </el-main>
   </el-container>
 </el-container>
-
   </div> 
 </template>
 
 <script>
 // import "./home.less"
+
 export default {
     created(){
         this.getMenuList()
@@ -88,7 +89,11 @@ export default {
         }
         
 
+    },
+    fn(){
+          this.$refs.numbox.change()
     }
+   
 
 }
 </script>
